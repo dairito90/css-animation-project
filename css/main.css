@@ -1,0 +1,24 @@
+body {
+    background-image: url(https://s-media-cache-ak0.pinimg.com/originals/61/2d/b7/612db742bd37015f321578647835a487.jpg);
+    background-size: 85%;
+
+}
+
+.zombie {
+    height: 240px;
+    background-image: url("http://community.facer.io/uploads/default/original/1X/8f4577932732c649bc292daeb2bc4871e8e1ed7a.png");
+    animation: play 10s steps(12)infinite;
+    top: 0px;
+    left: 0px;
+
+
+}
+
+@keyframes play {
+    from {
+        background-position: 0px;
+    }
+    100% {
+        background-position: -1536px;
+    }
+}
