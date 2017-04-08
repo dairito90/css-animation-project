@@ -1,24 +1,31 @@
 body {
-    background-image: url(https://s-media-cache-ak0.pinimg.com/originals/61/2d/b7/612db742bd37015f321578647835a487.jpg);
-    background-size: 85%;
+    background-image: url(http://media.indiedb.com/images/articles/1/171/170319/auto/image_g1c99wpwfh.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin:0;
 
 }
 
 .zombie {
-    height: 240px;
+position: fixed;
+    top: 400px;
+    left: 500px;
+    width: 256px;
+    height: 256px;
     background-image: url("http://community.facer.io/uploads/default/original/1X/8f4577932732c649bc292daeb2bc4871e8e1ed7a.png");
-    animation: play 10s steps(12)infinite;
-    top: 0px;
-    left: 0px;
-
-
+    animation: play 2s steps(6)infinite, slide 20s steps(100) infinite;
+    margin-left: 100%;
 }
 
 @keyframes play {
-    from {
-        background-position: 0px;
-    }
+
     100% {
         background-position: -1536px;
+    }
+}
+
+@keyframes slide {
+    100% {
+        margin-left: -800px;
     }
 }
