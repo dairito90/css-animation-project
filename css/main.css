@@ -8,8 +8,8 @@ body {
 
 .zombie {
 position: fixed;
-    top: 400px;
-    left: 500px;
+    top: 415px;
+    left: 600px;
     width: 256px;
     height: 256px;
     background-image: url("http://community.facer.io/uploads/default/original/1X/8f4577932732c649bc292daeb2bc4871e8e1ed7a.png");
@@ -29,3 +29,31 @@ position: fixed;
         margin-left: -800px;
     }
 }
+
+
+
+
+/*.bat {
+position: fixed;
+    top: 100px;
+    left: 200px;
+    width: 160px;
+    height: 160px;
+    background-image: url(https://steamuserimages-a.akamaihd.net/ugc/469797190819512727/8AD14E64AD552539CE813749F3EB3EF186797077/);
+    animation: play 2s steps(3)infinite, slide 20s steps(100) infinite;
+    margin-right: 100%;
+
+}
+
+@keyframes play {
+
+    100% {
+        background-position: -1536px;
+    }
+}
+
+@keyframes slide {
+    100% {
+        margin-right: -800px;
+    }
+}*/
