@@ -1,15 +1,20 @@
+html {
+    height: 100%;
+}
+
 body {
-    background-image: url(http://media.indiedb.com/images/articles/1/171/170319/auto/image_g1c99wpwfh.png);
-    background-size: 100%;
+    background: url(http://media.indiedb.com/images/articles/1/171/170319/auto/image_g1c99wpwfh.png);
+    background-size: 100% 100%;
+    background-position: 40% 50%;
     background-repeat: no-repeat;
     margin:0;
-
+    height: 100%;
 }
 
 .zombie {
 position: fixed;
     top: 415px;
-    left: 600px;
+    left: 30%;
     width: 256px;
     height: 256px;
     background-image: url("http://community.facer.io/uploads/default/original/1X/8f4577932732c649bc292daeb2bc4871e8e1ed7a.png");
@@ -26,34 +31,91 @@ position: fixed;
 
 @keyframes slide {
     100% {
-        margin-left: -800px;
+        margin-left: -1536px;
     }
 }
 
 
 
 
-/*.bat {
-position: fixed;
+.crow {
+    position: fixed;
     top: 100px;
-    left: 200px;
-    width: 160px;
-    height: 160px;
-    background-image: url(https://steamuserimages-a.akamaihd.net/ugc/469797190819512727/8AD14E64AD552539CE813749F3EB3EF186797077/);
-    animation: play 2s steps(3)infinite, slide 20s steps(100) infinite;
-    margin-right: 100%;
+    left: 0px;
+    width: 97px;
+    height: 119px;
+    background-image: url('../crow.png');
+    animation: crow 0.8s steps(4)infinite, flight 10s steps(100) infinite;
+}
+@keyframes crow {
+
+    100% {
+        background-position: -388px;
+    }
+}
+
+@keyframes flight {
+    100% {
+        left: 100%;
+    }
+}
+
+
+
+.zombie2 {
+    position: fixed;
+        top: 415px;
+        left: 600px;
+        width: 256px;
+        height: 256px;
+        background-image: url("http://community.facer.io/uploads/default/original/1X/8f4577932732c649bc292daeb2bc4871e8e1ed7a.png");
+        animation: zombie2 1s steps(6)infinite, move 25s steps(100) infinite;
+        margin-left: 100%;
+
 
 }
 
-@keyframes play {
+
+
+@keyframes zombie2 {
 
     100% {
         background-position: -1536px;
     }
 }
 
-@keyframes slide {
+@keyframes move {
     100% {
-        margin-right: -800px;
+        margin-left: -1536px;
     }
-}*/
+}
+
+
+.crow2 {
+    position: fixed;
+    top: 250px;
+    left: 40%;
+    width: 97px;
+    height: 119px;
+    background-image: url('../crow.png');
+    animation: crow 0.8s steps(4)infinite, flight 10s steps(100) infinite;
+}
+@keyframes crow {
+
+    100% {
+        background-position: -388px;
+    }
+}
+
+@keyframes flight {
+    100% {
+        left: 100%;
+    }
+}
+
+@media all and (max-width:480px) {
+    body {
+        background-size: auto 100%;
+    }
+    
+}
